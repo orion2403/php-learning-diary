@@ -52,3 +52,26 @@ while ($index < count($posts)) {
     print_r($posts[$index]);
     $index++;
 }
+
+// try to change elements in array
+$numbers = [1, 2, 3, 4, 5, 6];
+
+foreach ($numbers as &$number) {
+    if ($number == 1) {
+        $number = 2;
+    }
+}
+unset($number);
+
+print_r($numbers);
+
+$words = [
+    ['php', 'laravel'],
+    ['java', 'spring'],
+    ['python', 'fast-api']
+];
+
+foreach ($words as list($language, $framework)) {
+    echo $language;
+}
+
