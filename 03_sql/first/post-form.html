@@ -5,22 +5,7 @@
     <title>Post Form</title>
 </head>
 <body>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Date</th>
-    </tr>
-    <?php
 
-        $db = require 'vendor/db.php';
-
-        $posts = mysqli_query($db, 'SELECT * FROM `posts`);
-
-        print_r($posts);
-
-    ?>
-</table>
 <form action="vendor/create.php" method="POST">
     <label for="name">
         Title: <br> <input type="text" name="title" id="name">
