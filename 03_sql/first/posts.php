@@ -17,6 +17,7 @@
             <td><?= $post[1] ?></td>
             <td><?= $post[3] ?></td>
             <td><a href="vendor/open_post.php?id=<?= $post[0] ?>">Open post</a></td>
+            <td><a href="vendor/delete.php?id=<?= $post[0] ?>">Delete post</a></td>
         </tr>
 
         <?php

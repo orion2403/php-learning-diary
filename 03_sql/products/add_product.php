@@ -16,5 +16,5 @@ $isAdd = mysqli_query($db, "INSERT INTO `products` (`id`, `name`, `description`,
 if (!$isAdd) {
     die('Product added failed');
 } else {
-    die('Product added success');
+    header('Location: products-form.html');
 }
